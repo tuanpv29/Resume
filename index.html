@@ -10,201 +10,237 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/82bb699038.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- Sidebar -->
-  <nav id="sideNav" class="navbar navbar-expand-md flex-md-column bg-dark navbar-dark fixed-top col-md-3">
-    <a class="navbar-brand mt-auto" href="#">Navbar</a>
+  <nav id="sideBar" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand mt-md-auto" href="#">
+      <span class="d-block d-md-none">Navbar</span>
+      <span class="d-none d-md-block">
+        <img id="img-profile" class="img-fluid rounded-circle"
+          src="https://startbootstrap.github.io/startbootstrap-resume/assets/img/profile.jpg" alt="Avatar">
+      </span>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse flex-grow-0 mb-auto" id="collapsibleNavbar">
-      <ul class="navbar-nav flex-md-column">
+    <div class="collapse navbar-collapse flex-grow-0 mb-md-auto" id="collapsibleNavbar">
+      <ul id="sideMenu" class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">about</a>
+          <a class="nav-link" href="#section1">Full Name</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">experience</a>
+          <a class="nav-link" href="#section2">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">education</a>
+          <a class="nav-link" href="#section3">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">skills</a>
+          <a class="nav-link" href="#section4">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">interests</a>
+          <a class="nav-link" href="#section5">Interests</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">awards</a>
+          <a class="nav-link" href="#section6">Awards</a>
         </li>
       </ul>
     </div>
   </nav>
   <!-- End of Sidebar -->
 
-  <div class="col-md-9 ml-auto">
-    <!-- Content -->
-    <!-- About Content -->
-    <div class="container">
-      <div class="resumeSection py-5">
-        <h1>clarence taylor</h1>
-        <p>3542 berry street cheyenne wells, co 80810 (317) 585-8468 name@email.com</p>
-        <p>I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews.
-          Iterative approaches to corporate strategy foster collaborative thinking to further the overall value
-          proposition.</p>
-        <ul>
-          <li>
-            <a href="#">instagram</a>
+  <div id="content">
+    <div id="section1" class="container pt-5 pt-md-0">
+      <!-- Content -->
+      <!-- About Content -->
+      <div class="py-5">
+        <h1>Full <span class="text-danger">Name</span></h1>
+        <p>3542 BERRY STREET · CHEYENNE WELLS, CO 80810 · (317) 585-8468 · <span
+            class="text-danger">NAME@EMAIL.COM</span></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat natus dicta deleniti commodi sed qui
+          dolorum ut soluta minima eaque? Quam sit harum distinctio quod fugiat quasi accusamus provident nemo?</p>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="circle-icon">
+                <i class="icon fab fa-instagram"></i>
+              </span>
+            </a>
           </li>
-          <li>
-            <a href="#">github</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="circle-icon">
+                <i class="icon fab fa-github"></i>
+              </span>
+            </a>
           </li>
-          <li>
-            <a href="#">twitter</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="circle-icon">
+                <i class="icon fab fa-twitter"></i>
+              </span>
+            </a>
           </li>
-          <li>
-            <a href="#">facebook</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="circle-icon">
+                <i class="icon fab fa-facebook-f"></i>
+              </span>
+            </a>
           </li>
         </ul>
       </div>
+      <hr>
       <!-- End of About Content -->
       <!-- Experience Content -->
-      <div class="resumeSection py-5">
-        <h2>experience</h2>
-        <div>
-          <div>
-            <h3>senior web developer</h3>
-            <p>intelitec solutions</p>
-            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day,
-              going
-              forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined
-              cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+      <div id="section2" class="py-5">
+        <h2>Experience</h2>
+        <div class="row">
+          <div class="col-md-9">
+            <h3>Senior Web Developer</h3>
+            <h6>Intelitec Solutions</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur vitae soluta deserunt laborum beatae
+              iure et voluptates saepe obcaecati error culpa, eaque itaque, officiis laboriosam corporis reprehenderit
+              hic voluptate aut!</p>
           </div>
-          <div>
-            <p>march 2013 - present</p>
+          <div class="col-md-3">
+            <p>March 2013 - Present</p>
           </div>
         </div>
-        <div>
-          <div>
-            <h3>web developer</h3>
-            <p>intelitec solutions</p>
-            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the
-              digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information
-              highway will close the loop on focusing solely on the bottom line.</p>
+        <div class="row">
+          <div class="col-md-9">
+            <h3>Web Developer</h3>
+            <h6>Intelitec Solutions</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique vero aliquid perspiciatis itaque?
+              Pariatur sunt nostrum debitis nam reiciendis molestiae provident dicta porro unde voluptates tempora saepe
+              sit, quod quas.</p>
           </div>
-          <div>
+          <div class="col-md-3">
             <p>December 2011 - March 2013</p>
           </div>
         </div>
-        <div>
-          <div>
-            <h3>junior web designer</h3>
-            <p>shout! media productions</p>
-            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless
-              key
-              performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a
-              deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+        <div class="row">
+          <div class="col-md-9">
+            <h3>Junior Web Designer</h3>
+            <h6>Shout! Media Productions</h6>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi ea sed quaerat itaque molestias odio
+              veritatis natus non alias cum, repellendus beatae possimus optio? Nisi eaque doloribus aspernatur deserunt
+              et.</p>
           </div>
-          <div>
+          <div class="col-md-3">
             <p>July 2010 - December 2011</p>
           </div>
         </div>
-        <div>
-          <div>
-            <h3>web design intern</h3>
-            <p>shout! media productions</p>
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
-              users after installed base benefits. Dramatically visualize customer directed convergence without
-              revolutionary ROI.</p>
+        <div class="row">
+          <div class="col-md-9">
+            <h3>Web Design Intern</h3>
+            <h6>Shout! Media Productions</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim deserunt, hic aut quisquam necessitatibus
+              tenetur rerum, facere, odio officia architecto voluptatum dolore minima tempora quis et obcaecati ad at
+              recusandae.</p>
           </div>
-          <div>
+          <div class="col-md-3">
             <p>September 2008 - June 2010</p>
           </div>
         </div>
       </div>
+      <hr>
       <!-- End of Experience Content -->
       <!-- Education Content -->
-      <div class="resumeSection py-5">
-        <div>
-          <h3>university of colorado boulder</h3>
-          <p>bachelor of science</p>
-          <p>Computer Science - Web Development Track</p>
-          <p>GPA: 3.23</p>
+      <div id="section3" class="py-5">
+        <h2>Education</h2>
+        <div class="row">
+          <div class="col-md-9">
+            <h3>University of Colorado Boulder</h3>
+            <h6>Bachelor of Science</h6>
+            <h6>Computer Science - Web Development Track</h6>
+            <p>GPA: 3.23</p>
+          </div>
+          <div class="col-md-3">
+            <p>August 2006 - May 2010</p>
+          </div>
         </div>
-        <div>
-          <p>August 2006 - May 2010</p>
-        </div>
-        <div>
-          <h3>james buchanan high school</h3>
-          <p>technology magnet program</p>
-          <p>GPA: 3.56</p>
-        </div>
-        <div>
-          <p>August 2002 - May 2006</p>
+        <div class="row">
+          <div class="col-md-9">
+            <h3>James buchanan high school</h3>
+            <h6>technology magnet program</h6>
+            <p>GPA: 3.56</p>
+          </div>
+          <div class="col-md-3">
+            <p>August 2002 - May 2006</p>
+          </div>
         </div>
       </div>
+      <hr>
       <!-- End of Education Content -->
       <!-- Skills Content -->
-      <div  class="resumeSection py-5">
-        <div>
-          <h3>skills</h3>
-          <p>programming languges & tools</p>
-          <ul>
-            <li>icon</li>
-            <li>icon</li>
-            <li>icon</li>
-            <li>icon</li>
-            <li>icon</li>
-            <li>icon</li>
-            <li>icon</li>
-            <li>icon</li>
-            <li>icon</li>
-            <li>icon</li>
-            <li>icon</li>
-          </ul>
-          <p>workflow</p>
-          <ul>
-            <li>Mobile-First, Responsive Design</li>
-            <li>Cross Browser Testing & Debugging</li>
-            <li>Cross Functional Teams</li>
-            <li>Agile Development & Scrum</li>
-          </ul>
-        </div>
+      <div id="section4" class="py-5">
+        <h2>Skills</h2>
+        <h6>Programming Languges & Tools</h6>
+        <ul class="nav mb-4">
+          <li class="mr-2">
+            <i class="dev-icons fab fa-html5"></i>
+          </li>
+          <li class="mr-2">
+            <i class="dev-icons fab fa-css3-alt"></i>
+          </li>
+          <li class="mr-2">
+            <i class="dev-icons fab fa-js"></i>
+          </li>
+          <li class="mr-2">
+            <i class="dev-icons fab fa-angular"></i>
+          </li>
+        </ul>
+        <h6>Workflow</h6>
+        <ul class="list-unstyled ml-3">
+          <li><i class="fas fa-check"></i> Mobile-First, Responsive Design</li>
+          <li><i class="fas fa-check"></i> Cross Browser Testing & Debugging</li>
+          <li><i class="fas fa-check"></i> Cross Functional Teams</li>
+          <li><i class="fas fa-check"></i> Agile Development & Scrum</li>
+        </ul>
       </div>
+      <hr>
       <!-- End of Skills Contents -->
       <!-- Interests Content -->
-      <div  class="resumeSection py-5">
+      <div id="section5" class="py-5">
         <div>
-          <h3>interests</h3>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier
-            and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing,
-            and kayaking.</p>
-          <p>When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an
-            aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in
-            the front-end web development world.</p>
+          <h2>Interests</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam! Velit ad magni deserunt labore
+            suscipit quasi repellendus tempore molestiae quos! Doloribus voluptates sequi nemo odio cum, dolorum sint
+            repellendus.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, exercitationem. Incidunt necessitatibus
+            iusto
+            unde delectus. Veritatis sapiente, deleniti maxime fuga unde, ab vel nostrum temporibus tenetur laudantium
+            sint mollitia quo!</p>
         </div>
       </div>
+      <hr>
       <!-- End of Interests Content -->
       <!-- Awards Content -->
-      <div  class="resumeSection py-5">
+      <div id="section6" class="py-5">
         <div>
-          <h3>awards & certifications</h3>
-          <ul>
-            <li>Google Analytics Certified Developer</li>
-            <li>Mobile Web Specialist - Google Certification</li>
-            <li>1 st Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-            <li>1 st Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-            <li>2 nd Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-            <li>1 st Place - James Buchanan High School - Hackathon 2006</li>
-            <li>3 rd Place - James Buchanan High School - Hackathon 2005</li>
+          <h2>Awards & Certifications</h2>
+          <ul class="list-unstyled ml-3">
+            <li><i class="fas fa-trophy"></i> Google Analytics Certified Developer</li>
+            <li><i class="fas fa-trophy"></i> Mobile Web Specialist - Google Certification</li>
+            <li><i class="fas fa-trophy"></i> 1 st Place - University of Colorado Boulder - Emerging Tech Competition
+              2009</li>
+            <li><i class="fas fa-trophy"></i> 1 st Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI
+              Design Category)</li>
+            <li><i class="fas fa-trophy"></i> 2 nd Place - University of Colorado Boulder - Emerging Tech Competition
+              2008</li>
+            <li><i class="fas fa-trophy"></i> 1 st Place - James Buchanan High School - Hackathon 2006</li>
+            <li><i class="fas fa-trophy"></i> 3 rd Place - James Buchanan High School - Hackathon 2005</li>
           </ul>
         </div>
-        <!-- End of Awards Content -->
       </div>
+      <!-- End of Awards Content -->
     </div>
-    <!-- End of Content -->
+  </div>
+  <!-- End of Content -->
 </body>
 
 </html>

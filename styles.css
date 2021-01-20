@@ -2,14 +2,47 @@
   box-sizing: border-box;
 }
 
-
-
 @media only screen and (min-width: 768px) {
-  nav {
-    height: 100vh;
+  #sideBar {
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100%;
+  }
+  
+  #sideMenu {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #content {
+    margin-left: 17rem;
   }
 }
 
-.resumeSection {
-  min-height: 100vh;
-};
+#img-profile {
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+}
+
+.circle-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #495057;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.dev-icons {
+  font-size: 3rem;
+  margin-right: 1rem;
+  color: #6c757d;
+}
